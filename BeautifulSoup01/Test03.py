@@ -43,3 +43,10 @@ soup = BeautifulSoup(html_doc, 'lxml')
 
 #This specific tag has the attribute "id" which can be accessed like so:
 #print(tag['id'])
+
+#If we want to see all attributes, we can access them as a dictionary object:
+tag = soup.find_all('b')[3]
+print(tag)
+#Print out the attributes
+print(tag.attrs)
+
