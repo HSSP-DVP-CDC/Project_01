@@ -22,37 +22,23 @@ victim_sex = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/
 victim_age = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[7]")  
 incident_method = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[8]")                    
 
-#For Loop through incidents
-for incidents in incident_number:
-    print("Incident Number:" + incidents.text)
+#Homcide Results
+homicide_results =[]
 
-#For Loop through incident dates
-for incidents in incident_date:
-    print("Incident Date:" + incidents.text)
+for i in range(len(incident_number)):
+    temporary_data = {"Incident Number" : incident_number[i].text,
+                      "Incident Date" : incident_date[i].text,
+                      "Incident Location" : incident_location[i].text,
+                      "Victim ID" : victim_id[i].text,
+                      "Victim Race" : victim_race[i].text,
+                      "Victim Sex" : victim_sex[i].text,
+                      "Victim Age" : victim_age[i].text,
+                      "Incident Method" : incident_method[i].text
+                      }
+    homicide_results.append(temporary_data)
 
-#For Loop through incident locations
-for incidents in incident_location:
-    print("Incident Location:" + incidents.text)
-
-#For Loop through victim IDs
-for victim in victim_id:
-    print("Victim ID:" + victim.text)
-
-#For Loop through victim race
-for victim in victim_race:
-    print("Victim Race:" + victim.text)
-    
-#For Loop through victim sex
-for victim in victim_sex:
-    print("Victim Sex:" + victim.text)
-
-#For Loop through victim ages
-for victim in victim_age:
-    print("Victim Age:" + victim.text)
-
-#For Loop through incident method
-for methods in incident_method:
-    print("Homicide Method:" + methods.text)
+df = pd.DataFrame(homicide_results)
+print(df)
 
 #Close browser window when complete
 driver.close()
