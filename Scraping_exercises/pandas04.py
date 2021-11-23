@@ -37,8 +37,13 @@ for i in range(len(incident_number)):
                       }
     homicide_results.append(temporary_data)
 
+#Close browser window when complete
+driver.close()
+
+#Create a dataframe using Pandas
 df = pd.DataFrame(homicide_results)
 print(df)
 
-#Close browser window when complete
-driver.close()
+#Export data to excel
+df.to_excel('indianapolis_homicide_data.xlsx', index = False)
+
