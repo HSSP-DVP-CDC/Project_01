@@ -4,14 +4,23 @@
 
 #Import libraries
 from selenium import webdriver
-chrome_path = r"/Users/kellyquinn/Downloads/chromedriver"
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 import pandas as pd
-driver = webdriver.Chrome(chrome_path)
+
+#Set Chrome Options
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+
+#Set Chrome Driver 
+chrome_path = r"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/chromedriver"
+driver = webdriver.Chrome(chrome_path, chrome_options=options)
 driver.implicitly_wait(10)
 
+#Fetch webpage data
 driver.get("https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/")
-driver.maximize_window()
+# driver.maximize_window()
 
 incident_number = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[1]/a")
 incident_date = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[2]")
@@ -37,12 +46,9 @@ for i in range(len(incident_number)):
                       }
     homicide_results.append(temporary_data)
 
-#Close browser window when complete
-driver.close()
-
 #Create a dataframe using Pandas
 df = pd.DataFrame(homicide_results)
 print(df)
 
 #Export data to excel
-df.to_excel('indianapolis_homicide_data.xlsx', index = False)
+df.to_excel('indianapolis_homicide_data-headless.xlsx', index = False)
