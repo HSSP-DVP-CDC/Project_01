@@ -30,7 +30,7 @@ driver.get("https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and
 dwnload = driver.find_element(By.XPATH, "//*[@id='main']/div[1]/div[3]/div[1]/p[2]/a")
 dwnload.click()
 
-sleep(15)
+sleep(180)
 
 #Close browser window when complete
 driver.close()

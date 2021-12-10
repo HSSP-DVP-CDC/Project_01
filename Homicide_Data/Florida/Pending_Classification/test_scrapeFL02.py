@@ -12,13 +12,11 @@ import pandas as pd
 #Set Chrome Options
 options = Options()
 options.add_argument('--headless')
-options.add_argument('--disable-gpu')
 prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Florida/Pending_Classification"}
 options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
 chrome_path = r"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/chromedriver"
-# driver = webdriver.Chrome(chrome_path)
 driver = webdriver.Chrome(chrome_path, chrome_options=options)
 driver.implicitly_wait(10)
 

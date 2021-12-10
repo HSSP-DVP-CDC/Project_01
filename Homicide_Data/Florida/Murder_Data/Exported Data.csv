@@ -1,10 +1,16 @@
 "IncidentDate","IncidentNbr","StreetNbr","StreetName","StreetType","StreetDirection","ApartmentNbr","City","StateProvince","Zone","SubSector","IncidentLocation","VictimName","VictimRace","VictimGender","VictimAge","SuspectName","SuspectRace","SuspectGender","SuspectAge","ClearanceCode","Comments"
+"12/4/2021 12:00:00 AM","2021-0720852","5600","California","Ave","","","Jacksonville","Florida","4","K3","5600 California Ave
+Jacksonville, Florida","Record Exempt","B","M","25","","","","","Open",""
+"12/1/2021 12:00:00 AM","2021-0714376","2900","Justina","Rd","","","Jacksonville","Florida","2","D1","2900 Justina Rd
+Jacksonville, Florida","Record Exempt","B","M","36","","","","","Open",""
 "11/29/2021 12:00:00 AM","2021-0708643","100","21st","St","W","","Jacksonville","Florida","1","C1","100 21st St W
 Jacksonville, Florida","Record Exempt","B","M","35","Hall, Tiara Anche","B","F","31","Cleared By Arrest",""
+"11/29/2021 12:00:00 AM","2021-0710104","5000","Johnston Lake","Ct","","","Jacksonville","Florida","6","P2","5000 Johnston Lake Ct
+Jacksonville, Florida","Anderson Jr, Otis Lee","B","M","23","Anderson Sr, Otis Lee","B","M","52","Cleared By Arrest","Domestic"
 "11/27/2021 12:00:00 AM","2021-0705296","7300","Ironside","Dr","E","","Jacksonville","Florida","4","K3","7300 Ironside Dr E
 Jacksonville, Florida","Record Exempt","B","M","27","","","","","Open",""
 "11/20/2021 12:00:00 AM","2021-0691257","7300","Burlingame","Ct","","","Jacksonville","Florida","2","D2","7300 Burlingame Ct
-Jacksonville, Florida","Record Exempt","W","M","25","","","","","Open",""
+Jacksonville, Florida","Record Exempt","W","M","25","Smith, Patrick Lee","B","M","25","Cleared By Arrest",""
 "11/19/2021 12:00:00 AM","2021-0689294","6900","Autrey","Ave","S","","Jacksonville","Florida","4","K2","6900 Autrey Ave S
 Jacksonville, Florida","Record Exempt","B","F","33","Thompson, Synorae Lavette","B","F","37","Cleared By Arrest",""
 "11/18/2021 12:00:00 AM","2021-0687448","2100","Davis","St","","","Jacksonville","Florida","1","B2","2100 Davis St
