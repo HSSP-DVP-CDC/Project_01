@@ -1,4 +1,8 @@
 "IncidentDate","IncidentNbr","StreetNbr","StreetName","StreetType","StreetDirection","ApartmentNbr","City","StateProvince","Zone","SubSector","IncidentLocation","VictimName","VictimRace","VictimGender","VictimAge","SuspectName","SuspectRace","SuspectGender","SuspectAge","ClearanceCode","Comments"
+"12/27/2021 12:00:00 AM","2021-0766809","1500","Ferndale","Pl","","","Jacksonville","Florida","2","E1","1500 Ferndale Pl
+Jacksonville, Florida","Record Exempt","W","M","41","","","","","Open",""
+"12/15/2021 12:00:00 AM","2021-0742765","10000","103rd","St","","","Jacksonville","Florida","4","L2","10000 103rd St
+Jacksonville, Florida","Record Exempt","B","M","39","","","","","Open",""
 "12/4/2021 12:00:00 AM","2021-0720852","5600","California","Ave","","","Jacksonville","Florida","4","K3","5600 California Ave
 Jacksonville, Florida","Record Exempt","B","M","25","","","","","Open",""
 "12/1/2021 12:00:00 AM","2021-0714376","2900","Justina","Rd","","","Jacksonville","Florida","2","D1","2900 Justina Rd

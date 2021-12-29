@@ -32,5 +32,11 @@ dwnload.click()
 
 sleep(180)
 
-#Close browser window when complete
+# #Close browser window when complete
 driver.close()
+
+read_file = pd.read_excel('Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx')
+read_file.to_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
+
+df = pd.read_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
+print(df)
