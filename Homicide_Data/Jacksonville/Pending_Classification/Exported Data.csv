@@ -1,0 +1,28 @@
+"IncidentDate","IncidentNbr","StreetNbr","StreetName","StreetType","StreetDirection","ApartmentNbr","City","StateProvince","Zone","SubSector","IncidentLocation","VictimName","VictimRace","VictimGender","VictimAge","Comments"
+"11/27/2021 12:00:00 AM","2021-0705287","9000","Gloucestershire","Ct","","","Jacksonville","Florida","5","N3","9000 Gloucestershire Ct
+Jacksonville, Florida","Record Exempt","B","M","18",""
+"10/31/2021 12:00:00 AM","2021-0651786","15000","Dallas Creek","Ct","","","Jacksonville","Florida","6","P3","15000 Dallas Creek Ct
+Jacksonville, Florida","Record Exempt","W","M","50",""
+"9/3/2021 12:00:00 AM","2021-0527700","6800","Rhode Island","Dr","E","","Jacksonville","Florida","5","N3","6800 Rhode Island Dr E
+Jacksonville, Florida","Record Exempt","B","M","30",""
+"5/28/2021 12:00:00 AM","2021-0318361","7800","Jones","Rd","","","Jacksonville","Florida","5","O1","7800 Jones Rd
+Jacksonville, Florida","Hagar, Arnold Frazier","W","M","37","Officer Involved Shooting"
+"4/18/2021 12:00:00 AM","2021-0229238","8100","Messina","Dr","","","Jacksonville","Florida","2","D2","8100 Messina Dr
+Jacksonville, Florida","Record Exempt","W","M","26",""
+"3/5/2021 12:00:00 AM","2021-0135328","3600","Kernan","Blvd","S","","Jacksonville","Florida","3","H1","3600 Kernan Blvd S
+Jacksonville, Florida","Record Exempt","B","M","21",""
+"2/21/2021 12:00:00 AM","2021-0107131","7000","Old Kings","Rd","S","","Jacksonville","Florida","3","G2","7000 Old Kings Rd S
+Jacksonville, Florida","Neal, Daniel Newton (Suspect)","B","M","37","Officer Involved Shooting"
+"7/28/2020 12:00:00 AM","2020-0481353","","Record Exempt","","","","Jacksonville","Florida","","","Record Exempt
+Jacksonville, Florida","Record Exempt","W","M","47",""
+"7/9/2020 12:00:00 AM","2020-0444677","8200","Dix Ellis","Trl","","","Jacksonville","Florida","3","I2","8200 Dix Ellis Trl
+Jacksonville, Florida","Record Exempt","B","M","41",""
+"5/16/2020 12:00:00 AM","2020-0327456","","Record Exempt","","","","Jacksonville","Florida","4","K2","Record Exempt
+Jacksonville, Florida","Record Exempt","W","F","0","Classified on 9.30.20"
+"5/16/2020 12:00:00 AM","2020-0327456","","Record Exempt","","","","Jacksonville","Florida","","","Record Exempt
+Jacksonville, Florida","Record Exempt","W","F","0","Classified on 11.04.20"
+"4/30/2019 12:00:00 AM","2019-0305100","","Record Exempt","","","","","","4","J2","Record Exempt
+","Record Exempt","W","F","19",""
+"3/22/2018 12:00:00 AM","2018-0196499","2900","Tall Pine","Ln","W","","Jacksonville","Florida","2","D1","2900 Tall Pine Ln W
+Jacksonville, Florida","Record Exempt","B","F","41","Incident occurred 3.22.18
+Classified 11.25.20"
