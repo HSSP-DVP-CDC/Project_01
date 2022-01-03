@@ -11,7 +11,8 @@ import pandas as pd
 #Set Chrome Options
 options = Options()
 options.add_argument('--headless')
-options.add_argument('--disable-gpu')
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis"}
+options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
 chrome_path = r"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/chromedriver"
@@ -50,4 +51,4 @@ df = pd.DataFrame(homicide_results)
 print(df)
 
 #Export data to excel
-df.to_excel('indianapolis_homicide_data-headless.xlsx', index = False)
+df.to_excel(r'Homicide_Data/Indianapolis/indianapolis_homicide_data-headless.xlsx', index = False)

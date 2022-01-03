@@ -55,5 +55,3 @@ sleep(180)
 
 #Close browser window when complete
 driver.close()                                
-
-print(arcgis.__version__)
