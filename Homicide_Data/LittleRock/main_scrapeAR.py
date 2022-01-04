@@ -49,6 +49,7 @@ dwnload = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/info-pane/div
 dwnload.click()
 print("Download relevant data")
 
+
 sleep(180)
 
 #Close browser window when complete
