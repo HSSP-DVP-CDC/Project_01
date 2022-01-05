@@ -19,7 +19,7 @@ from arcgis.gis import GIS
 
 #Set Chrome Options
 options = Options()
-#options.add_argument('--headless')
+# options.add_argument('--headless')
 prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Detroit"}
 options.add_experimental_option('prefs', prefs)
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -38,21 +38,21 @@ print("ArcGIS Online as anonymous user")
 gis = GIS()
 print("Logged in as anonymous user to " + gis.properties.portalName)
 
-sleep(30)
+sleep(15)
 
 #Button to begin download options
 dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember111']/div/button[3]")
 dwnload_option.click()
 print("Download option initiated")
 
-sleep(30)
+sleep(15)
 
 #Button to toggle filter
 toggle = driver.find_element(By.XPATH, "/html/body/div[6]/div[2]/div/div[1]/div[1]/div/div/div[1]/div/div/div[2]/div/calcite-switch")
 toggle.click()
 print("Toggle initiated")
 
-sleep(25)
+sleep(15)
 
 #Button to download csv
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember44'))).click()
@@ -70,7 +70,7 @@ driver.execute_script('document.querySelector("div > div > div:nth-child(6) > hu
 
 print("Generate new download with latest data")
 
-sleep(180)
+sleep(120)
 
 #Close browser window when complete
 driver.close()                                
