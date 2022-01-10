@@ -44,7 +44,6 @@ sleep(15)
 #Button to begin download options
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember111'))).click()
 driver.execute_script('document.querySelector("div > button:nth-child(4)").click()')
-# document.querySelector("#ember111 > div > button:nth-child(4)")
 
 print("Download option initiated")
 
