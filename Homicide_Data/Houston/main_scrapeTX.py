@@ -36,12 +36,12 @@ sleep(180)
 driver.close()
 
 #October Data
-print("Oct 2021")
-read_file = pd.read_excel('Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx')
-read_file.to_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
+# print("Oct 2021")
+# read_file = pd.read_excel('Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx')
+# read_file.to_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
 
-df = pd.read_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
-print(df)
+# df = pd.read_csv("Homicide_Data/Houston/NIBRSPublicViewOct21.xlsx")
+# print(df)
 
 #November Data
 print("Nov 2021")
