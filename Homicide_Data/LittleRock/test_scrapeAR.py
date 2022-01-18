@@ -57,3 +57,34 @@ driver.close()
 #Read .csv file
 df = pd.read_csv('Homicide_Data/LittleRock/Little_Rock_Police_Department_Statistics_2017_to_Year_to_Date.csv')
 print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["INCIDENT_DATE"], ascending=False)
+
+#Create new dataframe
+sorted_df.to_csv('Homicide_Data/LittleRock/arkansas_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/LittleRock/arkansas_homicide_sorted.csv")
+print(df)
+
+## 2021 ##
+#Grab only values that are '09A' or 'Murder' for 2021
+# contains_values = df[df['INCIDENT_DATE'].str.contains('2021')]
+# print(contains_values)
+
+# #Create new dataframe
+# contains_values.to_csv('Homicide_Data/LittleRock/arkansas_homicide_2021.csv', index=False)
+
+# df = pd.read_csv("Homicide_Data/LittleRock/arkansas_homicide_2021.csv")
+# print(df)
+
+## 2022 ##
+#Grab only values that are '09A' or 'Murder' for 2022
+contains_values = df[df['INCIDENT_DATE'].str.contains('2022')]
+print(contains_values)
+
+#Create new dataframe
+contains_values.to_csv('Homicide_Data/LittleRock/arkansas_homicide_2022.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/LittleRock/arkansas_homicide_2022.csv")
+print(df)

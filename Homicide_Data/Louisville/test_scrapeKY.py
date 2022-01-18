@@ -32,11 +32,24 @@ sleep(180)
 driver.close()
 
 #Read .csv file
-df = pd.read_csv('Homicide_Data/LittleRock/CRIME_DATA_2021.csv')
+df = pd.read_csv('Homicide_Data/Louisville/CRIME_DATA_2021.csv')
 print(df)
 
-#try filtering
-filt = (df['CRIME_TYPE'] == 'Homicide')
-print(filt)
+# Sort the data
+sorted_df = df.sort_values(by=["DATE_REPORTED"], ascending=False)
 
-df[filt]
+#Create new dataframe
+sorted_df.to_csv('Homicide_Data/Louisville/kentucky_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/Louisville/kentucky_homicide_sorted.csv")
+print(df)
+
+#Grab only values that are '09A' or 'Murder'
+contain_values = df[df['NIBRS_CODE'].str.contains('09A')]
+print(contain_values)
+
+#Create new dataframe
+contain_values.to_csv('Homicide_Data/Louisville/kentucky_homicide_09A.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/Louisville/kentucky_homicide_09A.csv")
+print(df)

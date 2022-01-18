@@ -55,7 +55,17 @@ print(df)
 sorted_df = df.sort_values(by=["RMSOccurrenceDate"], ascending=False)
 
 #Create new dataframe
-sorted_df.to_csv('Homicide_Data/Houston/texas_homicide_sorted', index=False)
+sorted_df.to_csv('Homicide_Data/Houston/texas_homicide_sorted.csv', index=False)
 
-df = pd.read_csv("Homicide_Data/Houston/texas_homicide_sorted")
+df = pd.read_csv("Homicide_Data/Houston/texas_homicide_sorted.csv")
+print(df)
+
+#Grab only values that are '09A' or 'Murder'
+contain_values = df[df['NIBRSClass'].str.contains('09A')]
+print(contain_values)
+
+#Create new dataframe
+contain_values.to_csv('Homicide_Data/Houston/texas_homicide_09A.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/Houston/texas_homicide_09A.csv")
 print(df)
