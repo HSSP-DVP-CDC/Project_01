@@ -11,7 +11,7 @@ import pandas as pd
 
 #Set Chrome Options
 options = Options()
-#options.add_argument('--headless')
+options.add_argument('--headless')
 prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/LittleRock"}
 options.add_experimental_option('prefs', prefs)
 
@@ -49,7 +49,7 @@ dwnload = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/info-pane/div
 dwnload.click()
 print("Download relevant data")
 
-sleep(180)
+sleep(120)
 
 #Close browser window when complete
 driver.close()
