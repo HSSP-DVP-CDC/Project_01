@@ -1,10 +1,10 @@
-#Louisville
-#Kentucky
+#Louisville, Kentucky
 
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
 import time 
 from time import sleep
 import pandas as pd
@@ -27,9 +27,11 @@ dwnload = driver.find_element(By.XPATH, "//*[@id='data-and-resources']/div/div/u
 dwnload.click()
 
 sleep(180)
+print("Sleep complete")
 
 #Close browser window when complete
 driver.close()
+print("Driver closed")
 
 #Read .csv file
 df = pd.read_csv('Homicide_Data/Louisville/CRIME_DATA_2021.csv')
@@ -45,7 +47,7 @@ df = pd.read_csv("Homicide_Data/Louisville/kentucky_homicide_sorted.csv")
 print(df)
 
 #Grab only values that are '09A' or 'Murder'
-contain_values = df[df['NIBRS_CODE'].str.contains('09A')]
+contain_values = sorted_df[sorted_df['NIBRS_CODE'].str.contains('09A')]
 print(contain_values)
 
 #Create new dataframe
@@ -53,3 +55,5 @@ contain_values.to_csv('Homicide_Data/Louisville/kentucky_homicide_09A.csv', inde
 
 df = pd.read_csv("Homicide_Data/Louisville/kentucky_homicide_09A.csv")
 print(df)
+
+print("Program complete")

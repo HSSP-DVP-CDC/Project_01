@@ -4,14 +4,24 @@
 
 #Import libraries
 from selenium import webdriver
-chrome_path = r"/Users/kellyquinn/Downloads/chromedriver"
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+
 import pandas as pd
-driver = webdriver.Chrome(chrome_path)
+
+#Set Chrome Options
+options = Options()
+options.add_argument('--headless')
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis"}
+options.add_experimental_option('prefs', prefs)
+
+#Set Chrome Driver 
+chrome_path = r"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/chromedriver"
+driver = webdriver.Chrome(chrome_path, chrome_options=options)
 driver.implicitly_wait(10)
 
+#Fetch webpage data
 driver.get("https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/")
-driver.maximize_window()
 
 incident_number = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[1]/a")
 incident_date = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[2]")
@@ -39,10 +49,27 @@ for i in range(len(incident_number)):
 
 #Close browser window when complete
 driver.close()
+print("Driver closed")
 
 #Create a dataframe using Pandas
 df = pd.DataFrame(homicide_results)
 print(df)
 
-#Export data to excel
-df.to_excel('indianapolis_homicide_data.xlsx', index = False)
+#Export data to csv
+df.to_csv('Homicide_Data/Indianapolis/indianapolis_homicide_data.csv', index = False)
+
+# Read the csv into the console
+df = pd.read_csv("Homicide_Data/Indianapolis/indianapolis_homicide_data.csv")
+print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["Incident Number"], ascending=False)
+print(sorted_df)
+
+#Create new dataframe
+sorted_df.to_csv('Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv")
+print(df)
+
+print("Program complete")

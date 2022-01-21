@@ -1,10 +1,10 @@
-#Little Rock
-#Arkansas
+#Little Rock, Arkansas
 
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
 import time 
 from time import sleep
 import pandas as pd
@@ -50,9 +50,11 @@ dwnload.click()
 print("Download relevant data")
 
 sleep(120)
+print("Sleep complete")
 
 #Close browser window when complete
 driver.close()
+print("Driver closed")
 
 #Read .csv file
 df = pd.read_csv('Homicide_Data/LittleRock/Little_Rock_Police_Department_Statistics_2017_to_Year_to_Date.csv')
@@ -88,3 +90,5 @@ contains_values.to_csv('Homicide_Data/LittleRock/arkansas_homicide_2022.csv', in
 
 df = pd.read_csv("Homicide_Data/LittleRock/arkansas_homicide_2022.csv")
 print(df)
+
+print("Program complete")

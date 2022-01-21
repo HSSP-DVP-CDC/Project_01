@@ -1,10 +1,11 @@
-#Florida
+#Jacksonville, Florida
 #Murder Data
 
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
 import time 
 from time import sleep
 import pandas as pd
@@ -36,3 +37,5 @@ print("Program Complete.")
 # Print the data fram
 df = pd.read_csv("Homicide_Data/Jacksonville/Murder_Data/Exported Data.csv")
 print(df)
+
+print("Program complete")

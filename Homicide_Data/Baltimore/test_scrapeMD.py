@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
+
 import time 
 from time import sleep
 import pandas as pd
@@ -41,22 +42,20 @@ print("Logged in as anonymous user to " + gis.properties.portalName)
 sleep(20)
 
 #Button to begin download options
-wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember102'))).click()
-driver.execute_script('document.querySelector("div > button:nth-child(4)").click()')
-
+dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember102']/div/button[3]")
+dwnload_option.click()
 print("Download option initiated")
 
-sleep(30)
+sleep(15)
 
-#Button to toggle filter
-wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember47'))).click()
-driver.execute_script('document.querySelector("div > div > div:nth-child(1) > div > div > div.dataset-filter-toggle > div > calcite-switch").click()')
-
+# #Button to toggle filter
+toggle = driver.find_element(By.XPATH, "/html/body/div[6]/div[2]/div/div[1]/div[1]/div/div/div[1]/div/div/div[2]/div/calcite-switch")
+toggle.click()
 print("Toggle initiated")
 
 sleep(15)
 
-#Button to download csv
+# #Button to download csv
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember47'))).click()
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div > div > div:nth-child(1) > div > div > div:nth-child(6) > hub-download-card")))
 driver.execute_script('document.querySelector("div > div > div:nth-child(6) > hub-download-card").shadowRoot.querySelector("calcite-card > div > calcite-dropdown > calcite-button").click()')
@@ -64,13 +63,31 @@ print("Downloading csv")
 
 sleep(15)
 
-#Button to select new data for download
+# #Button to select new data for download
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#ember47'))).click()
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div > div > div:nth-child(1) > div > div > div:nth-child(6) > hub-download-card")))
 driver.execute_script('document.querySelector("div > div > div:nth-child(6) > hub-download-card").shadowRoot.querySelector("calcite-card > div > calcite-dropdown > calcite-dropdown-group > calcite-dropdown-item:nth-child(1)").shadowRoot.querySelector("div").click()')
 print("Generate new download with latest data")
 
 sleep(120)
+print("Sleep complete")
 
 #Close browser window when complete
-driver.close()                                
+driver.close() 
+print("Driver closed")                               
+
+# Read the csv into the console
+df = pd.read_csv("Homicide_Data/Baltimore/Part1_Crime_data.csv")
+print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["CrimeDateTime"], ascending=False)
+print(sorted_df)
+
+#Create new dataframe
+sorted_df.to_csv('Homicide_Data/Baltimore/baltimore_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Homicide_Data/Baltimore/baltimore_homicide_sorted.csv")
+print(df)
+
+print("Program complete")                              
