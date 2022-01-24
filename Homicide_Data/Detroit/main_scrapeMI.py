@@ -1,8 +1,9 @@
-#Detroit
-#Michigan
+#Detroit, Michigan
 #Requires a pip install <arcgis> API to address login credentials during automated testing
 #Source: https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 #Helpful StackOverflow about working with shadowroots: https://stackoverflow.com/questions/68909696/clicking-side-panel-elements-in-selenium-without-iframes
+
+#Scapes into a MASTER FOLDER
 
 #Import libraries
 from selenium import webdriver
@@ -11,16 +12,22 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
+
 import time 
 from time import sleep
 import pandas as pd
 import arcgis 
 from arcgis.gis import GIS
+import os
+
+#Delete current file to prevent duplication of datasets
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/RMS_Crime_Incidents.csv")
+print("Dataset deleted and ready to be replaced")
 
 #Set Chrome Options
 options = Options()
 # options.add_argument('--headless')
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Detroit"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets"}
 options.add_experimental_option('prefs', prefs)
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
@@ -45,7 +52,7 @@ dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember111']/div/button[3
 dwnload_option.click()
 print("Download option initiated")
 
-sleep(15)
+sleep(25)
 
 #Button to toggle filter
 toggle = driver.find_element(By.XPATH, "/html/body/div[6]/div[2]/div/div[1]/div[1]/div/div/div[1]/div/div/div[2]/div/calcite-switch")
@@ -71,6 +78,24 @@ driver.execute_script('document.querySelector("div > div > div:nth-child(6) > hu
 print("Generate new download with latest data")
 
 sleep(120)
+print("Sleep complete")
 
 #Close browser window when complete
-driver.close()                                
+driver.close() 
+print("Driver closed")                               
+
+# Read the csv into the console
+df = pd.read_csv("Data_Sets/RMS_Crime_Incidents.csv")
+print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["incident_timestamp"], ascending=False)
+print(sorted_df)
+
+#Create new dataframe
+sorted_df.to_csv('Data_Sets/detroit_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Data_Sets/detroit_homicide_sorted.csv")
+print(df)
+
+print("Program complete")

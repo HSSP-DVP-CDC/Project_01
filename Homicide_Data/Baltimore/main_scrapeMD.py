@@ -1,8 +1,9 @@
-#Baltimore
-#Maryland
+#Baltimore, Maryland
 #Requires a pip install <arcgis> API to address login credentials during automated testing
 #Source: https://developers.arcgis.com/python/guide/working-with-different-authentication-schemes/
 #Helpful StackOverflow about working with shadowroots: https://stackoverflow.com/questions/68909696/clicking-side-panel-elements-in-selenium-without-iframes
+
+#Scapes into a MASTER FOLDER
 
 #Import libraries
 from selenium import webdriver
@@ -11,16 +12,22 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
+
 import time 
 from time import sleep
 import pandas as pd
 import arcgis 
 from arcgis.gis import GIS
+import os
+
+#Delete current file to prevent duplication of datasets
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/Part1_Crime_data.csv")
+print("Dataset deleted and ready to be replaced")
 
 #Set Chrome Options
 options = Options()
 # options.add_argument('--headless')
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Baltimore"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets"}
 options.add_experimental_option('prefs', prefs)
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
@@ -69,6 +76,24 @@ driver.execute_script('document.querySelector("div > div > div:nth-child(6) > hu
 print("Generate new download with latest data")
 
 sleep(120)
+print("Sleep complete")
 
 #Close browser window when complete
-driver.close()                                
+driver.close() 
+print("Driver closed")                               
+
+# Read the csv into the console
+df = pd.read_csv("Data_Sets/Part1_Crime_data.csv")
+print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["CrimeDateTime"], ascending=False)
+print(sorted_df)
+
+#Create new dataframe
+sorted_df.to_csv('Data_Sets/baltimore_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Data_Sets/baltimore_homicide_sorted.csv")
+print(df)
+
+print("Program complete")                              

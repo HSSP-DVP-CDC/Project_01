@@ -1,18 +1,25 @@
-#Little Rock
-#Arkansas
+#Little Rock, Arkansas
+
+#Scapes into a MASTER FOLDER
 
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
 import time 
 from time import sleep
 import pandas as pd
+import os
+
+#Delete current file to prevent duplication of datasets
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/Little_Rock_Police_Department_Statistics_2017_to_Year_to_Date.csv")
+print("Dataset deleted and ready to be replaced")
 
 #Set Chrome Options
 options = Options()
 options.add_argument('--headless')
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/LittleRock"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets"}
 options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
@@ -49,12 +56,35 @@ dwnload = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/info-pane/div
 dwnload.click()
 print("Download relevant data")
 
-
-sleep(180)
+sleep(120)
+print("Sleep complete")
 
 #Close browser window when complete
 driver.close()
+print("Driver closed")
 
 #Read .csv file
-df = pd.read_csv('Homicide_Data/LittleRock/Little_Rock_Police_Department_Statistics_2017_to_Year_to_Date.csv')
+df = pd.read_csv('Data_Sets/Little_Rock_Police_Department_Statistics_2017_to_Year_to_Date.csv')
+# print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["INCIDENT_DATE"], ascending=False)
+
+#Create new dataframe
+sorted_df.to_csv('Data_Sets/arkansas_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Data_Sets/arkansas_homicide_sorted.csv")
+# print(df)
+
+# 2022 
+#Grab only values that are '09A' or 'Murder' for 2022
+contains_values = df[df['INCIDENT_DATE'].str.contains('2022')]
+print(contains_values)
+
+#Create new dataframe
+contains_values.to_csv('Data_Sets/arkansas_homicide_2022.csv', index=False)
+
+df = pd.read_csv("Data_Sets/arkansas_homicide_2022.csv")
 print(df)
+
+print("Program complete")

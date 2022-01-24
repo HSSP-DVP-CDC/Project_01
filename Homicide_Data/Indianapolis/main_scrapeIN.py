@@ -2,16 +2,19 @@
 #https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/
 #TUTORIAL: https://www.youtube.com/watch?v=JLDbAx6LAdo
 
+#Scapes into a MASTER FOLDER
+
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+
 import pandas as pd
 
 #Set Chrome Options
 options = Options()
 options.add_argument('--headless')
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets"}
 options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
@@ -46,9 +49,29 @@ for i in range(len(incident_number)):
                       }
     homicide_results.append(temporary_data)
 
+#Close browser window when complete
+driver.close()
+print("Driver closed")
+
 #Create a dataframe using Pandas
 df = pd.DataFrame(homicide_results)
 print(df)
 
-#Export data to excel
-df.to_excel(r'Homicide_Data/Indianapolis/indianapolis_homicide_data-headless.xlsx', index = False)
+#Export data to csv
+df.to_csv('Data_Sets/indianapolis_homicide_data.csv', index = False)
+
+# Read the csv into the console
+df = pd.read_csv("Data_Sets/indianapolis_homicide_data.csv")
+print(df)
+
+# Sort the data
+sorted_df = df.sort_values(by=["Incident Number"], ascending=False)
+print(sorted_df)
+
+#Create new dataframe
+sorted_df.to_csv('Data_Sets/indianapolis_homicide_sorted.csv', index=False)
+
+df = pd.read_csv("Data_Sets/indianapolis_homicide_sorted.csv")
+print(df)
+
+print("Program complete")

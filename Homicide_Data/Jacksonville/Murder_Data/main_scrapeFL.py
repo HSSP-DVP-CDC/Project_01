@@ -1,6 +1,8 @@
 #Jacksonville, Florida
 #Murder Data
 
+#Scapes into a MASTER FOLDER
+
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,11 +11,16 @@ from selenium.webdriver.chrome.options import Options
 import time 
 from time import sleep
 import pandas as pd
+import os
+
+#Delete current file to prevent duplication of datasets
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/Exported Data.csv")
+print("Dataset deleted and ready to be replaced")
 
 #Set Chrome Options
 options = Options()
 options.add_argument('--headless')
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Jacksonville/Murder_Data"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets"}
 options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
@@ -35,7 +42,7 @@ driver.close()
 print("Program Complete.")
 
 # Print the data fram
-df = pd.read_csv("Homicide_Data/Jacksonville/Murder_Data/Exported Data.csv")
+df = pd.read_csv("Data_Sets/Exported Data.csv")
 print(df)
 
 print("Program complete")
