@@ -84,16 +84,26 @@ print("Driver closed")
 
 # Read the csv into the console
 df = pd.read_csv("Data_Sets/Part1_Crime_data.csv")
-print(df)
+# print(df)
 
 # Sort the data
 sorted_df = df.sort_values(by=["CrimeDateTime"], ascending=False)
-print(sorted_df)
+# print(sorted_df)
 
 #Create new dataframe
 sorted_df.to_csv('Data_Sets/baltimore_homicide_sorted.csv', index=False)
 
 df = pd.read_csv("Data_Sets/baltimore_homicide_sorted.csv")
+# print(df)
+
+# 2022 
+contains_values = df[df['CrimeDateTime'].str.contains('2022', na=False)]
+# print(contains_values)
+
+#Create new dataframe
+contains_values.to_csv('Data_Sets/baltimore_homicide_2022.csv', index=False)
+
+df = pd.read_csv("Data_Sets/baltimore_homicide_2022.csv")
 print(df)
 
 print("Program complete")                              

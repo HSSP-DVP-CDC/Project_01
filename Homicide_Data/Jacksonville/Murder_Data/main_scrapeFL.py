@@ -43,6 +43,17 @@ print("Program Complete.")
 
 # Print the data fram
 df = pd.read_csv("Data_Sets/Exported Data.csv")
+# print(df)
+
+# 2022 
+#Grab only values that are '09A' or 'Murder' for 2022
+contains_values = df[df['IncidentDate'].str.contains('2022')]
+print(contains_values)
+
+#Create new dataframe
+contains_values.to_csv('Data_Sets/jacksonville_homicide_2022.csv', index=False)
+
+df = pd.read_csv("Data_Sets/jacksonville_homicide_2022.csv")
 print(df)
 
 print("Program complete")

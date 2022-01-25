@@ -86,16 +86,27 @@ print("Driver closed")
 
 # Read the csv into the console
 df = pd.read_csv("Data_Sets/RMS_Crime_Incidents.csv")
-print(df)
+# print(df)
 
 # Sort the data
 sorted_df = df.sort_values(by=["incident_timestamp"], ascending=False)
-print(sorted_df)
+# print(sorted_df)
 
 #Create new dataframe
 sorted_df.to_csv('Data_Sets/detroit_homicide_sorted.csv', index=False)
 
 df = pd.read_csv("Data_Sets/detroit_homicide_sorted.csv")
+# print(df)
+
+# 2022 
+# Data not published yet as of 01/25/2022
+contains_values = df[df['incident_timestamp'].str.contains('2022', na=False)]
+# print(contains_values)
+
+#Create new dataframe
+contains_values.to_csv('Data_Sets/detroit_homicide_2022.csv', index=False)
+
+df = pd.read_csv("Data_Sets/detroit_homicide_2022.csv")
 print(df)
 
 print("Program complete")
