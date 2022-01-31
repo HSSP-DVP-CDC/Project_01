@@ -1,0 +1,223 @@
+IncidentDate,IncidentNbr,StreetNbr,StreetName,StreetType,StreetDirection,ApartmentNbr,City,StateProvince,Zone,SubSector,IncidentLocation,VictimName,VictimRace,VictimGender,VictimAge,SuspectName,SuspectRace,SuspectGender,SuspectAge,ClearanceCode,Comments
+12/30/2021 12:00:00 AM,2021-0771781,9700.0,Tapestry Park,Cir,,,Jacksonville,Florida,3.0,H1,"9700 Tapestry Park Cir
+Jacksonville, Florida",Record Exempt,B,M,26,"Jamerson, Shacourtney Shaquay",B,F,21,Cleared By Arrest,
+12/29/2021 12:00:00 AM,2021-0533011,5000.0,Joy,Dr,,,Jacksonville,Florida,4.0,J3,"5000 Joy Dr
+Jacksonville, Florida",Record Exempt,W,F,68,,,,,Open,Original Incident Reported On 9.06.21
+12/27/2021 12:00:00 AM,2021-0766809,1500.0,Ferndale,Pl,,,Jacksonville,Florida,2.0,E1,"1500 Ferndale Pl
+Jacksonville, Florida",Record Exempt,W,M,41,,,,,Open,
+12/15/2021 12:00:00 AM,2021-0742765,10000.0,103rd,St,,,Jacksonville,Florida,4.0,L2,"10000 103rd St
+Jacksonville, Florida",Record Exempt,B,M,39,,,,,Open,
+12/4/2021 12:00:00 AM,2021-0720852,5600.0,California,Ave,,,Jacksonville,Florida,4.0,K3,"5600 California Ave
+Jacksonville, Florida",Record Exempt,B,M,25,,,,,Open,
+12/1/2021 12:00:00 AM,2021-0714376,2900.0,Justina,Rd,,,Jacksonville,Florida,2.0,D1,"2900 Justina Rd
+Jacksonville, Florida",Record Exempt,B,M,36,,,,,Open,
+11/29/2021 12:00:00 AM,2021-0708643,100.0,21st,St,W,,Jacksonville,Florida,1.0,C1,"100 21st St W
+Jacksonville, Florida",Record Exempt,B,M,35,"Hall, Tiara Anche",B,F,31,Cleared By Arrest,
+11/29/2021 12:00:00 AM,2021-0710104,5000.0,Johnston Lake,Ct,,,Jacksonville,Florida,6.0,P2,"5000 Johnston Lake Ct
+Jacksonville, Florida","Anderson Jr, Otis Lee",B,M,23,"Anderson Sr, Otis Lee",B,M,52,Cleared By Arrest,Domestic
+11/27/2021 12:00:00 AM,2021-0705296,7300.0,Ironside,Dr,E,,Jacksonville,Florida,4.0,K3,"7300 Ironside Dr E
+Jacksonville, Florida",Record Exempt,B,M,27,,,,,Open,
+11/20/2021 12:00:00 AM,2021-0691257,7300.0,Burlingame,Ct,,,Jacksonville,Florida,2.0,D2,"7300 Burlingame Ct
+Jacksonville, Florida",Record Exempt,W,M,25,"Smith, Patrick Lee",B,M,25,Cleared By Arrest,
+11/19/2021 12:00:00 AM,2021-0689294,6900.0,Autrey,Ave,S,,Jacksonville,Florida,4.0,K2,"6900 Autrey Ave S
+Jacksonville, Florida",Record Exempt,B,F,33,"Thompson, Synorae Lavette",B,F,37,Cleared By Arrest,
+11/18/2021 12:00:00 AM,2021-0687448,2100.0,Davis,St,,,Jacksonville,Florida,1.0,B2,"2100 Davis St
+Jacksonville, Florida",Record Exempt,B,M,30,,,,,Open,
+11/14/2021 12:00:00 AM,2021-0679527,3600.0,Lionell,St,,,Jacksonville,Florida,5.0,N1,"3600 Lionell St
+Jacksonville, Florida",Record Exempt,B,M,30,,,,,Open,
+11/10/2021 12:00:00 AM,2021-0672961,11000.0,Soforenko,Dr,,,Jacksonville,Florida,6.0,Q2,"11000 Soforenko Dr
+Jacksonville, Florida",Record Exempt,W,F,30,,,,,Open,
+10/31/2021 12:00:00 AM,2021-0650579,1500.0,19th,St,E,,Jacksonville,Florida,1.0,C2,"1500 19th St E
+Jacksonville, Florida",Record Exempt,B,M,17,,,,,Open,
+10/23/2021 12:00:00 AM,2021-0633762,2000.0,14th,St,W,,Jacksonville,Florida,5.0,M3,"2000 14th St W
+Jacksonville, Florida",Record Exempt,B,M,72,"Cooper, Keith Lavon",B,M,32,Cleared By Arrest,
+10/21/2021 12:00:00 AM,2021-0608276,200.0,16th,St,E,,Jacksonville,Florida,1.0,B2,"200 16th St E
+Jacksonville, Florida",Record Exempt,B,M,23,,,,,Open,
+10/18/2021 12:00:00 AM,2021-0622194,900.0,Adams,St,W,,Jacksonville,Florida,1.0,A1,"900 Adams St W
+Jacksonville, Florida",Record Exempt,W,M,61,"Hill, Dextor Anthony",B,M,64,Cleared By Arrest,
+10/16/2021 12:00:00 AM,2021-0620004,1500.0,Lane,Ave,S,,Jacksonville,Florida,4.0,K1,"1500 Lane Ave S
+Jacksonville, Florida",Record Exempt,B,M,29,,,,,Open,
+10/14/2021 12:00:00 AM,2021-0430316,2000.0,Phoenix,Ave,,,Jacksonville,Florida,1.0,B3,"2000 Phoenix Ave
+Jacksonville, Florida","Daniels, Michael Anthony",B,M,63,,,,,Open,"Original incident occurred on 7.18.1989
+Classified on 10.14.2021"
+10/11/2021 12:00:00 AM,2021-0608276,200.0,16th,St,E,,Jacksonville,Florida,1.0,B2,"200 16th St E
+Jacksonville, Florida",Record Exempt,B,M,27,,,,,Open,
+10/7/2021 12:00:00 AM,2021-0598520,10000.0,Lone Star,Rd,,,Jacksonville,Florida,2.0,D3,"10000 Lone Star Rd
+Jacksonville, Florida",Record Exempt,W,M,46,"Medina-Ulloa, Yery Noel",W,M,23,Cleared By Arrest,
+10/5/2021 12:00:00 AM,2021-0596017,1200.0,Brookwood Forest,Blvd,,,Jacksonville,Florida,2.0,D3,"1200 Brookwood Forest Blvd
+Jacksonville, Florida",Record Exempt,B,M,19,,,,,Open,
+10/2/2021 12:00:00 AM,2021-0588624,800.0,Broward,Rd,,,Jacksonville,Florida,6.0,P1,"800 Broward Rd
+Jacksonville, Florida",Record Exempt,B,M,28,,,,,Open,"Original incident occurred on 10.2.21
+Classified as murder on 10.5.21"
+9/30/2021 12:00:00 AM,2021-0582818,800.0,Alderman,Rd,,,Jacksonville,Florida,2.0,D2,"800 Alderman Rd
+Jacksonville, Florida",Record Exempt,B,M,18,"Flowers-Miller, Quamir Markel; Harris, Robert Deshawn",B; B,M; M,17; 18,Cleared By Arrest,
+9/29/2021 12:00:00 AM,2021-0580941,1900.0,Pullman,Ave,W,,Jacksonville,Florida,5.0,M3,"1900 Pullman Ave W
+Jacksonville, Florida",Record Exempt,B,M,31,,,,,Open,
+9/28/2021 12:00:00 AM,2021-0579998,4800.0,Lenox,Ave,,,Jacksonville,Florida,4.0,J2,"4800 Lenox Ave
+Jacksonville, Florida",Record Exempt,B,M,29,,,,,Open,
+9/27/2021 12:00:00 AM,2021-0576287,8400.0,Devoe,St,,,Jacksonville,Florida,5.0,O2,"8400 Devoe St
+Jacksonville, Florida",Record Exempt,B,M,28,,,,,Open,
+9/25/2021 12:00:00 AM,2021-0573042,9500.0,Water,St,,,Jacksonville,Florida,5.0,N3,"9500 Water St
+Jacksonville, Florida",Record Exempt,B,F,21,"Perry, Reginald Lawrence",B,M,19,Cleared By Arrest,
+9/25/2021 12:00:00 AM,2021-0573042,9500.0,Water,St,,,Jacksonville,Florida,5.0,N3,"9500 Water St
+Jacksonville, Florida",Record Exempt,B,M,0,"Perry, Reginald Lawrence",B,M,19,Cleared By Arrest,
+9/24/2021 12:00:00 AM,2021-0571530,1100.0,Lane,Ave,S,,Jacksonville,Florida,4.0,J2,"1100 Lane Ave S
+Jacksonville, Florida",Record Exempt,W,M,53,"Navarro, Stephen G.",W,M,30,Cleared By Arrest,
+9/18/2021 12:00:00 AM,2021-0559544,6000.0,Youngerman,Cir,,,Jacksonville,Florida,4.0,K3,"6000 Youngerman Cir
+Jacksonville, Florida",Record Exempt,B,M,26,"Williams, Andy Lee",B,M,34,Cleared By Arrest,
+9/6/2021 12:00:00 AM,2021-0533230,1000.0,Huron,St,,,Jacksonville,Florida,5.0,M2,"1000 Huron St
+Jacksonville, Florida",Record Exempt,B,M,29,"Bowman, Jaquan; Hicks, Key'asia Nashay; Owens, Jaomarion Antwan; Perkins, Jordan Antonio",B; B; B; B,M; F; M; M,14; 15; 15; 16,Cleared By Arrest,
+9/4/2021 12:00:00 AM,2021-0529736,200.0,Coastline,Dr,E,,Jacksonville,Florida,1.0,A3,"200 Coastline Dr E
+Jacksonville, Florida",Record Exempt,B,M,19,"Gallon, Paige NMN; Hall, Cory Deshawn",B; B,M; M,26; 29,Cleared By Arrest,
+8/29/2021 12:00:00 AM,2021-0515687,7100.0,McCarty,Dr,S,,Jacksonville,Florida,4.0,K2,"7100 McCarty Dr S
+Jacksonville, Florida",Record Exempt,B,M,27,"Felix, Granardo Lareese",B,M,28,Cleared By Arrest,
+8/22/2021 12:00:00 AM,2021-0500388,1800.0,Lane,Ave,S,,Jacksonville,Florida,4.0,K2,"1800 Lane Ave S
+Jacksonville, Florida",Record Exempt,B,M,26,,,,,Open,
+8/22/2021 12:00:00 AM,2021-0500527,1100.0,Airport,Rd,,,Jacksonville,Florida,6.0,P3,"1100 Airport Rd
+Jacksonville, Florida",Record Exempt,B,M,40,"Brown Jr, Timothy Asaad",B,M,18,Cleared By Arrest,
+8/18/2021 12:00:00 AM,2021-0491889,2200.0,Moncrief,Rd,,,Jacksonville,Florida,5.0,M3,"2200 Moncrief Rd
+Jacksonville, Florida",Record Exempt,B,M,30,,,,,Open,
+8/16/2021 12:00:00 AM,2021-0487217,9800.0,Beach,Blvd,,,Jacksonville,Florida,2.0,E3,"9800 Beach Blvd
+Jacksonville, Florida",Record Exempt,B,M,27,,,,,Open,
+8/9/2021 12:00:00 AM,2021-0433243,1600.0,45th,St,W,,Jacksonville,Florida,5.0,N2,"1600 45th St W
+Jacksonville, Florida",Record Exempt,B,M,17,,,,,Open,Original offense occurred on 7.20.21
+8/7/2021 12:00:00 AM,2021-0469214,4600.0,California,Ave,,,Jacksonville,Florida,4.0,K2,"4600 California Ave
+Jacksonville, Florida",Record Exempt,W,M,33,,,,,Open,
+8/3/2021 12:00:00 AM,2021-0460376,2700.0,Myra,St,,,Jacksonville,Florida,4.0,J1,"2700 Myra St
+Jacksonville, Florida","Schollaert, Caroline",W,F,26,"Parker, Tyree Levon",B,M,22,Cleared By Arrest,
+8/3/2021 12:00:00 AM,2021-0460301,2000.0,Brooklyn,Rd,,,Jacksonville,Florida,5.0,N1,"2000 Brooklyn Rd
+Jacksonville, Florida",Record Exempt,B,M,39,"Brown, Randall Bernard; Mackey, Kissy Terice Jovan",B; B,M; F,37; 43,Cleared By Arrest,
+8/3/2021 12:00:00 AM,2021-0461205,1200.0,Labelle,St,,,Jacksonville,Florida,4.0,J2,"1200 Labelle St
+Jacksonville, Florida",Record Exempt,B,M,22,,,,,Open,
+8/2/2021 12:00:00 AM,2021-0439976,1500.0,Ella,St,,,Jacksonville,Florida,5.0,M3,"1500 Ella St
+Jacksonville, Florida",Record Exempt,B,M,51,,,,,Open,Incident occurred on 7.23.21
+8/1/2021 12:00:00 AM,2021-0456389,9700.0,Patton,Rd,,,Jacksonville,Florida,2.0,E3,"9700 Patton Rd
+Jacksonville, Florida",Record Exempt,B,M,21,,,,,Open,
+7/28/2021 12:00:00 AM,2021-0449923,2900.0,Beachwood,Blvd,,,Jacksonville,Florida,2.0,E3,"2900 Beachwood Blvd
+Jacksonville, Florida",Record Exempt,B,M,34,"Milliner, Anthony Versell",B,M,32,Cleared By Arrest,"Incident occurred on 7.28.21
+Classified as murder on 8.02.21"
+7/24/2021 12:00:00 AM,2021-0441849,4200.0,Moncrief,Rd,,,Jacksonville,Florida,5.0,N2,"4200 Moncrief Rd
+Jacksonville, Florida",Record Exempt,B,M,21,,,,,Open,
+7/23/2021 12:00:00 AM,2021-0439976,1500.0,Ella,St,,,Jacksonville,Florida,5.0,M3,"1500 Ella St
+Jacksonville, Florida",Record Exempt,B,M,26,,,,,Open,
+7/16/2021 12:00:00 AM,2021-0423765,3500.0,University,Blvd,N,,Jacksonville,Florida,2.0,D1,"3500 University Blvd N
+Jacksonville, Florida",Record Exempt,W,F,35,"Rines, Nathan Matthew",W,M,40,Cleared By Arrest,
+7/15/2021 12:00:00 AM,2021-0423397,3100.0,Division,St,,,Jacksonville,Florida,5.0,N1,"3100 Division St
+Jacksonville, Florida",Record Exempt,B,M,35,"Artis, Jomarion Deangelo",B,M,20,Cleared By Arrest,
+7/13/2021 12:00:00 AM,2021-0416718,8000.0,Arlington,Expwy,,,Jacksonville,Florida,2.0,E2,"8000 Arlington Expwy
+Jacksonville, Florida",Record Exempt,B,M,27,,,,,Open,
+7/8/2021 12:00:00 AM,2021-0407835,7900.0,Concord,Blvd,E,,Jacksonville,Florida,5.0,N2,"7900 Concord Blvd E
+Jacksonville, Florida",Record Exempt,B,M,19,,,,,Open,
+7/2/2021 12:00:00 AM,2021-0395292,2400.0,Maynard,St,,,Jacksonville,Florida,5.0,N2,"2400 Maynard St
+Jacksonville, Florida",Record Exempt,B,M,38,,,,,Open,
+6/28/2021 12:00:00 AM,2021-0384856,9300.0,Norfolk,Blvd,,,Jacksonville,Florida,5.0,N3,"9300 Norfolk Blvd
+Jacksonville, Florida",Record Exempt,B,M,37,,,,,Open,
+6/23/2021 12:00:00 AM,2021-0376058,1600.0,31st,St,W,,Jacksonville,Florida,5.0,N1,"1600 31st St W
+Jacksonville, Florida",Record Exempt,B,M,42,,,,,Open,
+6/23/2021 12:00:00 AM,2021-0375225,7000.0,103rd,St,,,Jacksonville,Florida,4.0,K2,"7000 103rd St
+Jacksonville, Florida",Record Exempt,W,F,40,"Perkins, Zebulon L.",B,M,29,Cleared By Arrest,
+6/21/2021 12:00:00 AM,2021-0370732,1300.0,Dunn,Ave,,,Jacksonville,Florida,6.0,P1,"1300 Dunn Ave
+Jacksonville, Florida",Record Exempt,B,M,37,"Browning, Dawn Michelle",W,F,28,Cleared By Arrest,
+6/18/2021 12:00:00 AM,2021-0365781,6500.0,Shindler,Dr,,,Jacksonville,Florida,4.0,L1,"6500 Shindler Dr
+Jacksonville, Florida",Record Exempt,B,M,24,"Anderson, Tywan Tyron; Gunn, Daishawn Fremell",B; B,M; M,19; 19,Cleared By Arrest,
+6/16/2021 12:00:00 AM,2021-0360964,3700.0,University,Blvd,S,,Jacksonville,Florida,3.0,G3,"3700 University Blvd S
+Jacksonville, Florida",Record Exempt,W,M,42,,,,,Open,
+6/9/2021 12:00:00 AM,2021-0345236,3500.0,Townsend,Blvd,,,Jacksonville,Florida,2.0,D1,"3500 Townsend Blvd
+Jacksonville, Florida",Record Exempt,B,M,32,,,,,Open,
+6/8/2021 12:00:00 AM,2021-0343400,2800.0,Beaver,St,W,,Jacksonville,Florida,5.0,M1,"2800 Beaver St W
+Jacksonville, Florida",Record Exempt,B,M,16,"McCray, D'Andre Jordan",B,M,15,Cleared By Arrest,
+5/28/2021 12:00:00 AM,2021-0318829,1400.0,14th,St,W,,Jacksonville,Florida,5.0,M3,"1400 14th St W
+Jacksonville, Florida",Record Exempt,B,M,17,,,,,Open,
+5/26/2021 12:00:00 AM,2021-0313116,3500.0,Hyacinth,St,,,Jacksonville,Florida,5.0,M2,"3500 Hyacinth St
+Jacksonville, Florida",Record Exempt,B,M,38,,,,,Open,
+5/26/2021 12:00:00 AM,2021-0313143,0.0,Halsema,Rd,S,,Jacksonville,Florida,5.0,O2,"00 Halsema Rd S
+Jacksonville, Florida",Record Exempt,B,M,43,,,,,Open,
+5/22/2021 12:00:00 AM,2021-0304802,3600.0,Pearl,St,N,,Jacksonville,Florida,1.0,C1,"3600 Pearl St N
+Jacksonville, Florida",Record Exempt,B,M,54,,,,,Open,"Original Incident 5.22.21
+Classified murder on 6.24.21"
+5/21/2021 12:00:00 AM,2021-0304440,1000.0,Melson,Ave,,,Jacksonville,Florida,,,"1000 Melson Ave
+Jacksonville, Florida",Record Exempt,B,M,29,,,,,Open,
+5/20/2021 12:00:00 AM,2021-0301823,7200.0,Old Kings,Rd,S,,Jacksonville,Florida,3.0,G2,"7200 Old Kings Rd S
+Jacksonville, Florida",Record Exempt,B,F,32,"Hemans, Samijo Anthony",B,M,29,Cleared By Arrest,
+5/18/2021 12:00:00 AM,2021-0297070,1800.0,25th,St,E,,Jacksonville,Florida,1.0,C2,"1800 25th St E
+Jacksonville, Florida",Record Exempt,B,M,29,,,,,Open,
+5/6/2021 12:00:00 AM,2020-0803236,1700.0,9th,St,W,,Jacksonville,Florida,5.0,M3,"1700 9th St W
+Jacksonville, Florida",Record Exempt,W,M,41,,,,,Open,"Original incident occurred on 12.23.20
+Classified as a murder on 5.6.21"
+5/3/2021 12:00:00 AM,2021-0262749,1200.0,Arlington,Rd,N,,Jacksonville,Florida,2.0,D2,"1200 Arlington Rd N
+Jacksonville, Florida",Record Exempt,B,M,48,"Taylor, James Lamar",B,M,27,Cleared By Arrest,
+4/24/2021 12:00:00 AM,2021-0242508,2000.0,Retaw,St,,,Jacksonville,Florida,4.0,J2,"2000 Retaw St
+Jacksonville, Florida",Record Exempt,W,M,48,"Price, Jamarcus Phillip",B,M,32,Cleared By Arrest,
+4/22/2021 12:00:00 AM,2021-0239105,300.0,Woodbine,St,,,Jacksonville,Florida,1.0,C1,"300 Woodbine St
+Jacksonville, Florida",Record Exempt,B,M,39,,,,,Open,
+4/15/2021 12:00:00 AM,2021-0223986,,Record Exempt,,,,Jacksonville,Florida,,,"Record Exempt
+Jacksonville, Florida",Record Exempt,W,M,4,"Pino, Alexander Charles; Sipko, Michelle Leigh",W; W,M; F,30; 38,Cleared By Arrest,"Incident occurred 4.15.21
+Incident classified 4.22.21"
+4/12/2021 12:00:00 AM,2021-0217481,9100.0,103rd,St,,,Jacksonville,Florida,4.0,L2,"9100 103rd St
+Jacksonville, Florida",Record Exempt,B,M,25,"Knox, Peter Warren",B,M,24,Cleared By Arrest,
+4/10/2021 12:00:00 AM,2021-0212259,900.0,Kennard,St,,,Jacksonville,Florida,5.0,N2,"900 Kennard St
+Jacksonville, Florida",Record Exempt,B,M,36,"Evans, Jasman Marie",B,F,30,Cleared By Arrest,
+4/8/2021 12:00:00 AM,2021-0209336,2100.0,Allendale,Cir,N,,Jacksonville,Florida,5.0,M2,"2100 Allendale Cir N
+Jacksonville, Florida",Record Exempt,B,M,46,,,,,Open,
+4/7/2021 12:00:00 AM,2021-0205466,100.0,23rd,St,W,,Jacksonville,Florida,1.0,C1,"100 23rd St W
+Jacksonville, Florida",Record Exempt,B,M,36,,,,,Open,
+4/3/2021 12:00:00 AM,2021-0198321,2600.0,University,Blvd,N,,Jacksonville,Florida,2.0,D2,"2600 University Blvd N
+Jacksonville, Florida",Record Exempt,B,M,24,,,,,Open,
+4/1/2021 12:00:00 AM,2021-0192240,5100.0,Shenandoah,Ave,,,Jacksonville,Florida,5.0,O3,"5100 Shenandoah Ave
+Jacksonville, Florida",Record Exempt,B,M,29,"White, Michael Maurice",B,M,44,Cleared By Arrest,
+3/23/2021 12:00:00 AM,2021-0171649,3200.0,Silver,St,,,Jacksonville,Florida,1.0,C1,"3200 Silver St
+Jacksonville, Florida",Record Exempt,B,M,36,,,,,Open,
+3/17/2021 12:00:00 AM,2021-0159274,100.0,26th,St,W,,Jacksonville,Florida,1.0,C1,"100 26th St W
+Jacksonville, Florida",Record Exempt,B,M,48,,,,,Open,
+3/15/2021 12:00:00 AM,2021-0155989,8700.0,Baymeadows,Rd,,,Jacksonville,Florida,3.0,G2,"8700 Baymeadows Rd
+Jacksonville, Florida",Record Exempt,B,F,41,,,,,Open,
+3/11/2021 12:00:00 AM,2021-0147490,11230.0,Old St. Augustine,Rd,,,Jacksonville,Florida,3.0,I2,"11230 Old St. Augustine Rd
+Jacksonville, Florida",Record Exempt,W,M,60,"Hanna, Russell Edward",W,M,38,Cleared By Arrest,
+3/1/2021 12:00:00 AM,2021-0125003,3800.0,Franklin,St,,,Jacksonville,Florida,1.0,C2,"3800 Franklin St
+Jacksonville, Florida",Record Exempt,B,M,58,"Bryant, LaTerres Perez",B,M,47,Cleared By Arrest,
+2/27/2021 12:00:00 AM,2021-0121148,300.0,18th,St,W,,Jacksonville,Florida,1.0,B2,"300 18th St W
+Jacksonville, Florida",Record Exempt,B,F,25,"Ivy, Lorenzo Stephan",B,M,23,Cleared By Arrest,
+2/20/2021 12:00:00 AM,2021-0105026,3400.0,Hodges,Blvd,,,Jacksonville,Florida,3.0,H1,"3400 Hodges Blvd
+Jacksonville, Florida",Record Exempt,W,M,30,"Kreighbaum, Christopher Michael",W,M,32,Cleared By Arrest,
+2/20/2021 12:00:00 AM,2021-0105402,1400.0,Monotak,Ave,,,Jacksonville,Florida,4.0,K1,"1400 Monotak Ave
+Jacksonville, Florida",Record Exempt,B,M,19,,,,,Open,
+2/20/2021 12:00:00 AM,2021-0106261,3000.0,Myra,St,,,Jacksonville,Florida,4.0,J1,"3000 Myra St
+Jacksonville, Florida",Record Exempt,W,F,56,,,,,Open,
+2/20/2021 12:00:00 AM,2021-0106645,200.0,7th,St,W,,Jacksonville,Florida,1.0,B2,"200 7th St W
+Jacksonville, Florida",Record Exempt,W,M,37,"Minton, Eric J.",W,M,44,Cleared By Arrest,
+2/16/2021 12:00:00 AM,2021-0097496,5700.0,Hollybell,Drive,,,Jacksonville,Florida,2.0,D1,"5700 Hollybell Drive
+Jacksonville, Florida",Record Exempt,B,M,25,,,,,Open,
+2/15/2021 12:00:00 AM,2021-0094521,5900.0,Jacks,Rd,,,Jacksonville,Florida,5.0,O3,"5900 Jacks Rd
+Jacksonville, Florida",Record Exempt,W,M,60,"Thomas, Gene William",B,M,29,Cleared By Arrest,
+2/15/2021 12:00:00 AM,2021-0094521,5900.0,Jacks,Rd,,,Jacksonville,Florida,5.0,O3,"5900 Jacks Rd
+Jacksonville, Florida",Record Exempt,W,F,61,"Thomas, Gene William",B,M,29,Cleared By Arrest,
+2/11/2021 12:00:00 AM,2021-0087517,5700.0,Iris,St,,,Jacksonville,Florida,5.0,N1,"5700 Iris St
+Jacksonville, Florida",Record Exempt,B,M,61,,,,,Open,
+2/8/2021 12:00:00 AM,2021-0080619,4200.0,Moncrief,Rd,W,,Jacksonville,Florida,5.0,M2,"4200 Moncrief Rd W
+Jacksonville, Florida",Record Exempt,W,M,30,"Glover, Kyshawn Lamont; Kay, Robert David; Laureano-Cosme, Owen Maoma; Lester, Keon Hunter; Sears, Alana Rae",B; B; W; B; B,M; M; M; M; F,17; 18; 17; 18; 14,Cleared By Arrest,
+2/8/2021 12:00:00 AM,2021-0080619,4200.0,Moncrief,Rd,W,,Jacksonville,Florida,5.0,M2,"4200 Moncrief Rd W
+Jacksonville, Florida",Record Exempt,W,F,30,"Glover, Kyshawn Lamont; Kay, Robert David; Laureano-Cosme, Owen Maoma; Lester, Keon Hunter; Sears, Alana Rae",B; B; W; B; B,M; M; M; M; F,17; 18; 17; 18; 14,Cleared By Arrest,
+2/8/2021 12:00:00 AM,2021-0080619,4200.0,Moncrief,Rd,W,,Jacksonville,Florida,5.0,M2,"4200 Moncrief Rd W
+Jacksonville, Florida",Record Exempt,W,M,27,"Glover, Kyshawn Lamont; Kay, Robert David; Laureano-Cosme, Owen Maoma; Lester, Keon Hunter; Sears, Alana Rae",B; B; W; B; B,M; M; M; M; F,17; 18; 17; 18; 14,Cleared By Arrest,
+2/7/2021 12:00:00 AM,2021-0077409,9300.0,Norfolk,Blvd,,,Jacksonville,Florida,5.0,N3,"9300 Norfolk Blvd
+Jacksonville, Florida",Record Exempt,B,M,41,"Wright, Carlos Antonio",B,M,47,Cleared By Arrest,
+2/1/2021 12:00:00 AM,2021-0064905,8200.0,Dix Ellis,Trl,,,Jacksonville,Florida,3.0,I2,"8200 Dix Ellis Trl
+Jacksonville, Florida",Record Exempt,W,M,19,,,,,Open,
+1/24/2021 12:00:00 AM,2021-0049252,5000.0,Shenandoah,Ave,,,Jacksonville,Florida,,,"5000 Shenandoah Ave
+Jacksonville, Florida",Record Exempt,B,M,20,"Duncan, Esmone D.; Hodge, Jordan Tyrese; Smith, Timothy Jacob Lee",B; B; B,F; M; M,22; 21; 23,Cleared By Arrest,
+1/23/2021 12:00:00 AM,2021-0046068,3900.0,Bunnell,Dr,,,Jacksonville,Florida,3.0,H1,"3900 Bunnell Dr
+Jacksonville, Florida",Record Exempt,W,M,25,"Litgen, George Kenneth",W,M,50,Cleared By Arrest,
+1/22/2021 12:00:00 AM,2021-0044298,9500.0,Watershed,Dr,N,,Jacksonville,Florida,5.0,O2,"9500 Watershed Dr N
+Jacksonville, Florida",Record Exempt,B,F,24,"McEwing, Keenan Da'von",B,M,24,Exceptionally Cleared (Death of Offender),Suspect was killed during commission of the murder
+1/22/2021 12:00:00 AM,2021-0044756,4200.0,Moncrief,Rd,,,Jacksonville,Florida,5.0,N1,"4200 Moncrief Rd
+Jacksonville, Florida",Record Exempt,W,M,20,,,,,Open,
+1/21/2021 12:00:00 AM,2021-0043130,8200.0,Delaware,Ave,,,Jacksonville,Florida,5.0,N2,"8200 Delaware Ave
+Jacksonville, Florida",Record Exempt,B,M,27,,,,,Open,
+1/11/2021 12:00:00 AM,2021-0022202,7800.0,New Kings,Rd,,,Jacksonville,Florida,5.0,N3,"7800 New Kings Rd
+Jacksonville, Florida",Record Exempt,B,M,52,"Johnson, Mack Arthur",B,M,25,Cleared By Arrest,
+1/10/2021 12:00:00 AM,2021-0020013,5600.0,Barnhill,Dr,,,Jacksonville,Florida,3.0,G3,"5600 Barnhill Dr
+Jacksonville, Florida",Record Exempt,W,M,27,,,,,Open,
+1/6/2021 12:00:00 AM,2021-0011521,2400.0,Edison,Ave,,,Jacksonville,Florida,5.0,M1,"2400 Edison Ave
+Jacksonville, Florida","Sumlar, Justin Troy",B,M,31,"James, Greggory Lynn",B,M,20,Cleared By Arrest,
+1/1/2021 12:00:00 AM,2021-0002142,2000.0,Hyde Park,Rd,,,Jacksonville,Florida,4.0,K2,"2000 Hyde Park Rd
+Jacksonville, Florida",Record Exempt,B,M,48,,,,,Open,
