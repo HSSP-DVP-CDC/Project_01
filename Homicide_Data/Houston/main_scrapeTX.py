@@ -1,4 +1,5 @@
 #Texas, Houston
+#Scapes into a MASTER FOLDER
 
 #Import libraries
 from selenium import webdriver

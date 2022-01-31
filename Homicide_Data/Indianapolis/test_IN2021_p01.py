@@ -2,6 +2,9 @@
 #https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/
 #TUTORIAL: https://www.youtube.com/watch?v=JLDbAx6LAdo
 
+#Scapes into a MASTER FOLDER
+# 2021 PAGE 01
+
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -56,20 +59,10 @@ df = pd.DataFrame(homicide_results)
 print(df)
 
 #Export data to csv
-df.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_data.csv', index = False)
+df.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_data.csv', mode = 'a', index = False, header = 'False')
 
 # Read the csv into the console
 df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_data.csv")
-print(df)
-
-# Sort the data
-sorted_df = df.sort_values(by=["Incident Number"], ascending=False)
-print(sorted_df)
-
-#Create new dataframe
-sorted_df.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv', index=False)
-
-df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv")
 print(df)
 
 print("Program complete")

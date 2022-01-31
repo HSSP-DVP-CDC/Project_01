@@ -2,6 +2,9 @@
 #https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/
 #TUTORIAL: https://www.youtube.com/watch?v=JLDbAx6LAdo
 
+#Scapes into a MASTER FOLDER
+# 2021 PAGE 13
+
 #Import libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -21,7 +24,7 @@ driver = webdriver.Chrome(chrome_path, chrome_options=options)
 driver.implicitly_wait(10)
 
 #Fetch webpage data
-driver.get("https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/")
+driver.get("https://databases.indystar.com/indianapolis-crime-list-of-all-criminal-homicides-in-2021/page/13/")
 
 incident_number = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[1]/a")
 incident_date = driver.find_elements(By.XPATH, "//*[@id='csp-data']/div/div[3]/div/div[1]/table/tbody/tr/td[2]")
@@ -63,13 +66,13 @@ df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_
 print(df)
 
 # Sort the data
-sorted_df = df.sort_values(by=["Incident Number"], ascending=False)
-print(sorted_df)
+# sorted_df = df.sort_values(by=["Incident Number"], ascending=False)
+# print(sorted_df)
 
 #Create new dataframe
-sorted_df.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv', index=False)
+# sorted_df.to_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv", index=False)
 
-df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv")
-print(df)
+# df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Indianapolis/indianapolis_homicide_sorted.csv")
+# print(df)
 
 print("Program complete")
