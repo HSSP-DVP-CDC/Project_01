@@ -51,9 +51,9 @@ contains_values = df[df['IncidentDate'].str.contains('2021')]
 print(contains_values)
 
 #Create new dataframe
-contains_values.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/jacksonville_homicide_2022.csv', index=False)
+contains_values.to_csv('/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/jacksonville_homicide_2021.csv', index=False)
 
-df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/jacksonville_homicide_2022.csv")
+df = pd.read_csv("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/jacksonville_homicide_2021.csv")
 print(df)
 
 print("Program complete")
