@@ -12,8 +12,9 @@ import pandas as pd
 import os
 
 #Delete current file to prevent duplication of datasets
-os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/NIBRSPublicViewDec21.xlsx")
-os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021/NIBRSPublicViewDec21.csv")
+# UPDATE THIS DATA FORMAT FOR 22 DATA WHEN IT IS RELEASED
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2022/NIBRSPublicView[REPLACE WITH PROPER DATASET].xlsx")
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2022/NIBRSPublicView[REPLACE WITH PROPER DATASET].csv")
 print("Datasets deleted and ready to be replaced")
  
 #Set Chrome Options
@@ -21,7 +22,7 @@ options = Options()
 # options.add_argument('--headless')
 # options.add_argument('--disable-gpu')
 # options.add_argument("--disable-extensions")
-prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2021"}
+prefs = {"download.default_directory":"/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2022"}
 options.add_experimental_option('prefs', prefs)
 
 #Set Chrome Driver 
@@ -32,6 +33,8 @@ driver.implicitly_wait(10)
 #Fetch webpage data
 driver.get("https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm")
 
+# UPDATE THIS DATA FORMAT FOR 22 DATA WHEN IT IS RELEASED
+# ON CLICK MAY BE A DIFFERENT ELEMENT
 dwnload = driver.find_element(By.XPATH, "//*[@id='main']/div[1]/div[3]/div[1]/p[2]/a")
 dwnload.click()
 
@@ -42,21 +45,22 @@ print("Sleep complete")
 driver.close()
 print("Driver closed")
 
-# Through December 2021 Data
-print("Data through December 2021")
-read_file = pd.read_excel('Data_Sets/2021/NIBRSPublicViewDec21.xlsx')
-read_file.to_csv("Data_Sets/2021/NIBRSPublicViewDec21.csv")
+# Through December 2022 Data
+## UPDATE THIS DATA FORMAT FOR 22 DATA WHEN IT IS RELEASED
+print("Data for 2022")
+read_file = pd.read_excel('Data_Sets/2022/NIBRSPublicView[REPLACE WITH PROPER DATASET].xlsx')
+read_file.to_csv("Data_Sets/2022/NIBRSPublicView[REPLACE WITH PROPER DATASET].csv")
 
-df = pd.read_csv("Data_Sets/2021/NIBRSPublicViewDec21.csv")
+df = pd.read_csv("Data_Sets/2022/NIBRSPublicView[REPLACE WITH PROPER DATASET].csv")
 # print(df)
 
 # Sort the data
 sorted_df = df.sort_values(by=["RMSOccurrenceDate"], ascending=False)
 
 #Create new dataframe
-sorted_df.to_csv('Data_Sets/2021/texas_homicide_sorted.csv', index=False)
+sorted_df.to_csv('Data_Sets/2022/texas_homicide_sorted.csv', index=False)
 
-sorted_df = pd.read_csv("Data_Sets/2021/texas_homicide_sorted.csv")
+sorted_df = pd.read_csv("Data_Sets/2022/texas_homicide_sorted.csv")
 # print(df)
 
 #Grab only values that are '09A' or 'Murder'
@@ -64,7 +68,7 @@ contain_values = sorted_df[sorted_df['NIBRSClass'].str.contains('09A')]
 print(contain_values)
 
 #Create new dataframe
-contain_values.to_csv('Data_Sets/2021/texas_homicide_09A.csv', index=False)
+contain_values.to_csv('Data_Sets/2022/texas_homicide_09A.csv', index=False)
 
 df = pd.read_csv("Data_Sets/2021/texas_homicide_09A.csv")
 print(df)

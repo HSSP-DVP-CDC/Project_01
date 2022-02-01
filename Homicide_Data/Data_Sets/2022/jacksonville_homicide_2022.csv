@@ -1,0 +1,19 @@
+IncidentDate,IncidentNbr,StreetNbr,StreetName,StreetType,StreetDirection,ApartmentNbr,City,StateProvince,Zone,SubSector,IncidentLocation,VictimName,VictimRace,VictimGender,VictimAge,SuspectName,SuspectRace,SuspectGender,SuspectAge,ClearanceCode,Comments
+1/16/2022 12:00:00 AM,2022-0032004,0.0,32nd,Street,,,Jacksonville,Florida,1.0,C1,"00 32nd Street
+Jacksonville, Florida",Record Exempt,B,M,38,,,,,Open,
+1/15/2022 12:00:00 AM,2022-0030206,4100.0,Brentwood,Avenue,,,Jacksonville,Florida,1.0,C1,"4100 Brentwood Avenue
+Jacksonville, Florida",Record Exempt,B,M,20,,,,,Open,
+1/7/2022 12:00:00 AM,2022-0013547,8000.0,Vermillion,Street,,,Jacksonville,Florida,1.0,C3,"8000 Vermillion Street
+Jacksonville, Florida",Record Exempt,B,F,18,,,,,Open,
+1/7/2022 12:00:00 AM,2022-0014048,8000.0,Wilson,Boulevard,,,Jacksonville,Florida,4.0,K2,"8000 Wilson Boulevard
+Jacksonville, Florida",Record Exempt,W,F,82,"Mc Innis, Steven Allen",W,M,62,Cleared By Arrest,
+1/6/2022 12:00:00 AM,2022-0010378,11100.0,Lem Turner,Road,,,Jacksonville,Florida,6.0,P2,"11100 Lem Turner Road
+Jacksonville, Florida",Record Exempt,W,M,55,,,,,Open,
+1/5/2022 12:00:00 AM,2022-0009552,6600.0,Powers,Avenue,,,Jacksonville,Florida,3.0,G3,"6600 Powers Avenue
+Jacksonville, Florida",Record Exempt,B,M,22,,,,,Open,
+1/2/2022 12:00:00 AM,2022-0002080,1100.0,Dunn,Ave,,,Jacksonville,Florida,6.0,P1,"1100 Dunn Ave
+Jacksonville, Florida",Record Exempt,B,M,24,,,,,Open,
+1/2/2022 12:00:00 AM,2022-0002148,4900.0,Skyway,Dr,,,Jacksonville,Florida,3.0,H1,"4900 Skyway Dr
+Jacksonville, Florida",Record Exempt,W,M,31,"Simms, Corey Malcome",B,M,30,Open,
+1/2/2022 12:00:00 AM,2022-0003644,1800.0,Kernan,Blvd,,,Jacksonville,Florida,2.0,F2,"1800 Kernan Blvd
+Jacksonville, Florida",Record Exempt,B,M,23,,,,,Open,
