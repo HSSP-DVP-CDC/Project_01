@@ -48,8 +48,7 @@ print("Logged in as anonymous user to " + gis.properties.portalName)
 sleep(20)
 
 #Button to begin download options
-# ERROR: THIS EMBER TAG CHANGED FROM 102 TO 101 ON 2/3/22
-dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember101']/div/button[3]")
+dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember102']/div/button[3]")
 dwnload_option.click()
 print("Download option initiated")
 

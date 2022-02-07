@@ -21,7 +21,7 @@ from arcgis.gis import GIS
 import os
 
 #Delete current file to prevent duplication of datasets
-#os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2022/Part1_Crime_data.csv")
+os.remove("/Users/kellyquinn/Desktop/ORISE/HSSP_Code/Project_01/Homicide_Data/Data_Sets/2022/Part1_Crime_data.csv")
 print("Dataset deleted and ready to be replaced")
 
 #Set Chrome Options
@@ -49,7 +49,8 @@ sleep(20)
 
 #Button to begin download options
 # ERROR: THIS EMBER TAG CHANGED FROM 102 TO 101 ON 2/3/22
-dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember101']/div/button[3]")
+# ERROR: THIS EMBER TAG CHANGED BACK TO 102 ON 2/7/22
+dwnload_option = driver.find_element(By.XPATH, "//*[@id='ember102']/div/button[3]")
 dwnload_option.click()
 print("Download option initiated")
 
